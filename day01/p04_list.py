@@ -42,7 +42,7 @@ dm1col3 = [9,10,11,12]
 
 print([dm1col1, dm1col2, dm1col3])
 # 리스트 연산은 문자열 연산과 동일
-print(even +odd)
+print(even + odd)
 print(odd*2)
 
 ##값 변경
