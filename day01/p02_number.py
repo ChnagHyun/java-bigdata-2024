@@ -27,6 +27,6 @@ print(a * c)
 print(c / b) # 정확하게 실수로 나누기
 print(c // b)# 정수로만 나누기
 print(c % b) # 정수로 나눈 나머지
-print(2 ** 10) # 1024 import math; mate now()
+print(2 ** 10) # 1024 import math; mate now() 제곱
 
 print((a + b) * c) # 연산자 우선순위는 다 필요없고, () 괄호만 잘 쓰면 끝
