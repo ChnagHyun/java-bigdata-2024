@@ -4,7 +4,7 @@
 ## 1일차
 - 파이썬 개발환경 
     - 깃헙 가입
-       [깃헙] (http://github.com/)
+       [깃헙](http://github.com/)
     - 깃 설치
         http://git-scm.com/download/win
     - 기헙 데스크탑 설치
