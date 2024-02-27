@@ -101,7 +101,7 @@
 
         ![주소록앱](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata01.gif)
 
-        - Windows App 만들기(Tkinter,PwQt)
+        - Windows App 만들기(PyQt 5)
 
         ![QtApp](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata02.gif)
 
