@@ -1,5 +1,7 @@
 # file: p34_addrBook.py
 # desc: 콘솔 주소록 프로그램
+import os
+
 
 class Contact: #주소록 클래스
     # 생성자
@@ -23,7 +25,14 @@ def setContact(): # 사용자 입력으로 주소록 받기함수
     phoneNumber=phoneNumber.strip()
     eMail=eMail.strip()
     addr=addr.strip()
-    print(f'"{name}","{phoneNumber}","{eMail}","{addr}"')
+    # print(f'"{name}","{phoneNumber}","{eMail}","{addr}"')
+    contact = Contact(name, phoneNumber, eMail, addr) #매개변수명과 동일하게 로컬변수 이름 지정
+    return contact
+
+def clearConsole():
+    cmd = 'clear' # macOS, Linux, Unix 명령어
+    if os.name in('nt', 'dos'): # window
+        cmd = 'cls' #window 명령어
 
 def displayMenu():
     menu = ('주소록 프로그램\n'
@@ -35,12 +44,27 @@ def displayMenu():
     sel = int(input('메뉴입력 : '))
     return sel
 
+def getContacts(lst):
+    for item in lst:
+        print(item)
 
 def run():
+    #연락처담을 주소록 리스트
+    lstContact = []
+
+    clearConsole() # 화면을 클리어
     while True:
         selMenu = displayMenu()
-        if selMenu == 4:
+        if selMenu ==1: #연락처 추가라면
+            clearConsole()
+            contact = setContact()
+            lstContact.append(contact)
+            #print(lstContact)
+            input(); clearConsole()
+        elif selMenu == 4:
             break
+        else:
+            clearConsole()
 
 # def run():
 #     first = Contact(name='홍길동', phoneNumber='010-9999-5555', eMail='hgd@naver.com', addr='경성')
