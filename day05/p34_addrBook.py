@@ -16,10 +16,35 @@ class Contact: #주소록 클래스
                f'이메일 : {self.__eMail}\n'
                f'주  소 : {self.__addr}')
         return res
+    
+def setContact(): # 사용자 입력으로 주소록 받기함수
+    (name, phoneNumber, eMail, addr) = input('주소록 입력(이름, 핸드폰, 이메일, 주소[구분자/] >)').split('/')
+    name=name.strip()
+    phoneNumber=phoneNumber.strip()
+    eMail=eMail.strip()
+    addr=addr.strip()
+    print(f'"{name}","{phoneNumber}","{eMail}","{addr}"')
+
+def displayMenu():
+    menu = ('주소록 프로그램\n'
+            '1. 연락처 추가\n'
+            '2. 연락처 출력\n'
+            '3. 연락처 삭제\n'
+            '4. 종료\n')
+    print(menu)
+    sel = int(input('메뉴입력 : '))
+    return sel
+
 
 def run():
-    first = Contact(name='홍길동', phoneNumber='010-9999-5555', eMail='hgd@naver.com', addr='경성')
-    print(first)
+    while True:
+        selMenu = displayMenu()
+        if selMenu == 4:
+            break
+
+# def run():
+#     first = Contact(name='홍길동', phoneNumber='010-9999-5555', eMail='hgd@naver.com', addr='경성')
+#     print(first)
 
 if __name__=='__main__': #메인 엔트리
     print('프로그램 시작')
