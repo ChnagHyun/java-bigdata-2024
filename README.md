@@ -74,8 +74,8 @@
         - 아스키 및 이니코드
         - 주소록 앱 만들기
 
-        ```python
-        class Contact: # 주소록 클래스
+    ```python
+    class Contact: # 주소록 클래스
         def __init__(self, name, phoneNumber, eMail, addr) -> None: # 생성자
             self.__name = name
             self.__phoneNumber = phoneNumber
@@ -97,7 +97,7 @@
             
         def getInfo(self):
             return self.__name, self.__phoneNumber, self.__eMail, self.__addr
-        ```
+    ```
 
         ![주소록앱](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata01.gif)
 
