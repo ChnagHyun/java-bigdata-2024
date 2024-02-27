@@ -74,4 +74,6 @@
         - 아스키 및 이니코드
         - 주소록 앱 만들기
 
+        ![주소록앱](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata01.gif)
+
 ## 6일차
