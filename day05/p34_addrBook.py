@@ -39,9 +39,9 @@ def setContact(): # 사용자 입력으로 주소록 받기함수
     return contact
 
 def delContact(lst, name): #연락처 삭제함수
-    for i, item in enumerate(lst):
+    for item in lst:
         if item.isNameExist(name):
-            del lst[i]
+            lst.remove(name)
 
 def saveContact(lst): #연락처 저장함수
     with open(file= './contacts.txt', mode='w',encoding='utf-8') as fp:
@@ -49,6 +49,20 @@ def saveContact(lst): #연락처 저장함수
             name,phoneNumber,eMail,addr = item.getInfo()
             fp.write(f'{name}/{phoneNumber}/{eMail}/{addr}\n')
             
+def loadContact(lst): #처음 실행시 연락처 로드함수
+    try:
+        with open('./contacts.txt', mode='r', encoding='utf-8') as fp:
+            while True:
+                line = fp.readline()
+                if not line: break
+
+                lines = line.replace('\n','').split('/') #list
+                contact = Contact(name=lines[0],phoneNumber=lines[1],eMail=lines[2],addr=lines[3])
+                lst.append(contact)
+    except: #연락처 파일이 없으면 새로 만들어준다
+        f = open('./contacts.txt',mode='w',encoding='utf-8')
+        f.close()
+
 
 def displayMenu():
     menu = ('주소록 프로그램\n'
@@ -57,7 +71,10 @@ def displayMenu():
             '3. 연락처 삭제\n'
             '4. 종료\n')
     print(menu)
-    sel = int(input('메뉴입력 : '))
+    try:
+        sel = int(input('메뉴입력 : '))
+    except: #1~4가 아닌 잘못된 문자 입력할때 예외처리
+        sel = 0
     return sel
 
 def clearConsole():
@@ -75,6 +92,7 @@ def getContacts(lst): # 리스트를 받아서 출력함수
 def run():
     # 연락처담을 주소록 리스트
     lstContact = []
+    loadContact(lstContact) #연락처 로드
 
     clearConsole() # 화면을 클리어
     while True:
@@ -82,10 +100,18 @@ def run():
 
         if selMenu == 1: # 연락처 추가라면
             clearConsole()
-            contact = setContact()
-            lstContact.append(contact)
-            # print(lstContact)
-            input(); clearConsole() # 엔터 입력유도            
+            try:
+                contact = setContact()
+            except: #입력을 시킨대로 안하면
+                contact = None
+
+            if contact != None:
+                lstContact.append(contact)
+                input('입력 성공!')
+            else:
+                input('입력 실패')
+
+            clearConsole() # 엔터 입력유도            
         elif selMenu == 2: # 연락처 출력
             clearConsole()
             getContacts(lstContact)

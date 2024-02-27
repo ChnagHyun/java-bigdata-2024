@@ -1,3 +1,4 @@
 홍길동/010-9999-8888/hgd@naver.com/경성
-박창현/010-1234-5678/karlll@naver.com/부산
-홍길순/010-4444-4444/hgs@nate.com/경기
+박창현/010-6666-7777/park@gmail.com/부산
+애슐리/010-9877-6543/ashley@nate.com/인천
+홍길순/010-9808-2323/hgs@daum.net/대전
