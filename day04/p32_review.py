@@ -46,5 +46,3 @@ import datetime
 
 curr = datetime.datetime.now()
 print(f'{curr.year}/{curr.month:02d}/{curr.day:02d} {curr.hour}:{curr.minute}:{curr.second}')
-
-#12
