@@ -110,8 +110,8 @@
     - PyQt5 학습 이어서
         - QWidget 자식 클래스 종류 학습
 
-        - [QLabel](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata03.gif)
+        ! [QLabel](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata03.gif)
 
         - Naver 뉴스 API 검색 앱
 
-        -! [naverApp](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata04.gif)
+        ! [naverApp](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata04.gif)
