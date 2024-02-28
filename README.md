@@ -105,4 +105,13 @@
 
         ![QtApp](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata02.gif)
 
-## 6일차
+## 6일차 (24.02.28)
+- 파이썬 학습
+    - PyQt5 학습 이어서
+        - QWidget 자식 클래스 종류 학습
+
+        - [QLabel](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata03.gif)
+
+        - Naver 뉴스 API 검색 앱
+
+        -! [naverApp](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata04.gif)
