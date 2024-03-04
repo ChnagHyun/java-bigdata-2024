@@ -7,7 +7,7 @@ from email import policy
 import requests
 import json
 
-slack_url = 'https://hooks.slack.com/services/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' #깃헙 업로드전 삭제 필요
+slack_url = 'https://hooks.slack.com/services/T**/B**/******' #깃헙 업로드전 삭제 필요
 
 def sendToSlack(msg):
     header = {'Content-type' : 'application/json'}
@@ -22,8 +22,8 @@ def find_encoding_info(txt):
     return subject,encode
 
 imap = imaplib.IMAP4_SSL('imap.naver.com')
-id = 'karlll'
-pwd = 'ckdgus1324%%'
+id = '<yourid>'
+pwd = '<yourpass>'
 res = imap.login(id,pwd)
 
 
