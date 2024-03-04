@@ -1,6 +1,9 @@
 # file : p48_transApp.py
 # desc : PyQt5 스레드 학습용(스레드 사용안함)
 #pip install googletrans
+#모듈, 라이브러리 설치시 버전 업/다운 버전을 기재해주면 됨!
+#>pip install googletrans==3.1.0a0
+#>pip install googletrans==4.0.0rc1
 
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
