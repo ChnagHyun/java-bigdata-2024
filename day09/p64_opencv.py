@@ -3,7 +3,7 @@
 
 import cv2
 
-samplePath = './day09/dex.mp4'
+samplePath = './day09/news.mp4'
 faceCascade = cv2.CascadeClassifier('./day09/haarcascade_frontalface_default.xml')
 cap = cv2.VideoCapture(samplePath) #0은 웹캠, 또는 문자열로 동영상 경로
 
