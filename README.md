@@ -163,5 +163,7 @@
     ![edutir](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata11.gif)
 
 ## 10일차    
+- 파이썬 응용
+    - 그림에디터 완성
     - 메모장 만들기
     - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
