@@ -126,14 +126,15 @@
 
              ![스레드](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata05.png)
 
-             - TTS
-             - QRCode 생성기
+- 파이썬 응용
+     - TTS
+     - QRCode 생성기
 
-             ![QR](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata06.png)
+     ![QR](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata06.png)
 
-             - 구글번역기앱
+     - 구글번역기앱
 
-             ![구글번역](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata07.png)
+     ![구글번역](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata07.png)
 
 ## 8일차
 - 파이썬 응용
@@ -151,8 +152,16 @@
 
 ## 9일차
 - 파이썬 응용
-    - 이미지 처리 OpenCV
-    - 플라스크 웹서버
-    - 그림에디터 만들기
+    - 이미지 처리 OpenCV [윤대희님 깃헙](http://076923.github.io/posts/Python-opencv-1/) 참조
+
+    ![얼굴인식](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata10.gif)
+
+    -[Flask](https://flask-docs-kr.readthedocs.io/ko/latest/index.html), [Django](https://developer.mozilla.org/ko/docs/Learn/Server-side/Django) dnpqtjqj
+
+    - 그림에디터 만들기 
+
+    ![edutir](https://raw.githubusercontent.com/ChnagHyun/java-bigdata-2024/main/images/bigdata11.gif)
+
+## 10일차    
     - 메모장 만들기
     - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
