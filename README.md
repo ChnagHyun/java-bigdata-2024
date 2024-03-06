@@ -167,7 +167,8 @@
     - 그림에디터 완성 (OpenCV 그레이스케일, 블러기능 추가)
 
         > mp4로 동영상 업로드 하려면 github 사이트에서 Readme.md를 수정 클릭 후, mp4를 드래그만 하면
-         > 제한사항은 10MB 이하
+        
+        > 제한사항은 10MB 이하
 
     - 실행파일 만들기
         - PyInstaller 모듈 설치
@@ -179,4 +180,5 @@
         - 실패, 재생성시는 build, dist폴더 삭제, pythonfile.spec 삭제 뒤 다시 명령어 실행
 
     - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
+        - Ctrl + Shift + P (명령 팔레트)
     - 메모장 만들기
